@@ -1,0 +1,15 @@
+[build]
+  command = "pnpm build"
+  publish = ".next"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
+
+[functions]
+  external_node_modules = ["@mongodb/browser", "@mongodb/client-encryption"]
+  node_bundler = "esbuild"
+
+[build.environment]
+  NEXT_USE_NETLIFY_EDGE = "true"
