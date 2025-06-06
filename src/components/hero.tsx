@@ -1,6 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo          {isSuccess
+            ? "You've successfully secured your spot.We'll hit you up the moment it's your turn to dive in"
+            : "Let us know what you think 😉"}seState } from "react";
 
 import Countdown from "./countdown";
 import { Logo } from "./svgs";

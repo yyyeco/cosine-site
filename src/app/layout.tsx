@@ -19,8 +19,7 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
 	title: "Cosine | Luau",
-	description:
-		"A simple Next.js waitlist template with Notion as CMS and Resend to send emails created with React Email and Upstash Redis for rate limiting. Deployed on Vercel.",
+	description: "dtr was here",
 	icons: {
 		icon: [
 			{ url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
