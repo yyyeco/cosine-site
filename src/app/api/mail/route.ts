@@ -8,8 +8,9 @@ export async function POST(request: Request) {
 	try {
 		const { email, name } = await request.json();
 
+		// Using Resend's test domain during development
 		const { data, error } = await resend.emails.send({
-			from: "onboarding@resend.dev",
+			from: "onboarding@resend.dev", // This is a pre-verified address for testing
 			to: [email],
 			subject: "Welcome to Cosine Waitlist",
 			react: WelcomeTemplate({ userFirstname: name }),
